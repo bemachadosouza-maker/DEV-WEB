@@ -10,8 +10,11 @@
     
  <form action="#" method="post">
     
-        <h3>Login:  </h3>
+        <table>
+        <th>Login:</th>
         <h1>GELEDAIRA</h1>
+          <table border="5" cellpadding="10" cellspacing="0">
+
 
             <label for="Nome">nome:</label>
             <input type="text" id="Nome" placeholder="Seu nome..." required>
@@ -23,9 +26,35 @@
             <input type="password" id="Senha" required>
             <br><br>
 
-            <label for="mensagem">mensagem</label>
-            <textarea name="mensagem" id="mensagem" cols="15" rows="4" placeholder="escreva aqui ..."></textarea>
-            <br><br>
+            
+<button class="btn-entrar" onclick="window.location.href='/login'">
+    Entrar
+  </button>
+  
+  <style>
+  .btn-entrar {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: white;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+  }
+  
+  .btn-entrar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.5);
+  }
+  
+  .btn-entrar:active {
+    transform: scale(0.96);
+  }
+  </style>
+  
 
         <h3>Cidades:</h3>
 
@@ -36,8 +65,19 @@
                 <option value="SL">São Leopoldo</option>
                 <option value="CB">Campo Bom</option>
                 <option value="MGO">Montenegros</option>
-            </select>
+                <br><br>
+              </select>
 
+
+
+                <fieldset>
+                  <Legend>Genero:</Legend> 
+                  <input type="radio" id="masc" name="genero" value="M">
+                  <label for="Masc">Masculino</label>
+                  <input type="radio" id="fem" name="genero" value="F">
+                  <label for="fem">Feminino</label>
+              </fieldset>
+                
         </form>
 </body>
 </html>
