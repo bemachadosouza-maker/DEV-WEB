@@ -3,81 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 2</title>
+    <title>Aula 4</title>
 
 </head>
 <body>
     
- <form action="#" method="post">
-    
-        <table>
-        <th>Login:</th>
-        <h1>GELEDAIRA</h1>
-          <table border="5" cellpadding="10" cellspacing="0">
+      <style>
+          .resenha h1{color: blue;}
+
+      </style>
+
+        <div class="resenha">
+
+       <h1>Login GELEDAIRA:</h1>
+
+       </div>
 
 
-            <label for="Nome">nome:</label>
-            <input type="text" id="Nome" placeholder="Seu nome..." required>
-            <br><br>
-            <label for="email">email:</label>
-            <input type="email" id="email" placeholder="seuemail@gmail.com">
-            <br><br>
-            <label for="Senha">Senha:</label>
-            <input type="password" id="Senha" required>
-            <br><br>
+        <form action="#" method="post">
 
-            
-<button class="btn-entrar" onclick="window.location.href='/login'">
-    Entrar
-  </button>
-  
-  <style>
-  .btn-entrar {
-    background: linear-gradient(135deg, #2563eb, #1d4ed8);
-    color: white;
-    padding: 12px 32px;
-    border: none;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
-  }
-  
-  .btn-entrar:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.5);
-  }
-  
-  .btn-entrar:active {
-    transform: scale(0.96);
-  }
-  </style>
-  
+        <label for="nome">nome:</label>
+        <br><br>
+        <input type="text" id="nome" placeholder="seu nome completo...">
+        <br><br>
+        <label for="email">E-mail:</label>
+        <br><br>
+        <input type="email" id="email" placeholder="seuemail@gmail.com">
+        <br><br>
+        <label for="senha">Senha: (min 6, só letras e números) :</label>
+        <br><br>
+        <input type="password" id="senha" pattern="[a-zA-Z0-9]{6,}" placeholder="Minimo 6 caracteres..." required>
+        <br><br>
+        <label for="idade">idade (13 a 99)</label>
+        <br><br>
+        <input type="number" id="idade" min="14" max="99" required>
+        <br><br>
+        <label for="Data">Data (so em 2026) :</label>
+        <br><br>
+        <input type="date" id="date" min="2026-01-01" max="2026-12-31">
+        <br><br>
 
-        <h3>Cidades:</h3>
+      </form>
 
-            <label for="Cidade" id="Cidade"></label>
-            <select name="Cidade" id="cidade">
-                <option value="selecione..."></option>
-                <option value="NH">Novo Hamburgo</option>
-                <option value="SL">São Leopoldo</option>
-                <option value="CB">Campo Bom</option>
-                <option value="MGO">Montenegros</option>
-                <br><br>
-              </select>
-
-
-
-                <fieldset>
-                  <Legend>Genero:</Legend> 
-                  <input type="radio" id="masc" name="genero" value="M">
-                  <label for="Masc">Masculino</label>
-                  <input type="radio" id="fem" name="genero" value="F">
-                  <label for="fem">Feminino</label>
-              </fieldset>
-                
-        </form>
 </body>
 </html>
