@@ -4,15 +4,8 @@
     background-color: antiquewhite;
  }
 
-
- h1{
-   
-    border: 1px solid black;
- }
- p{
-    border: 1px solid black;
- }
- div{
-    border: 1px solid blacks;
+ span{
+    display: block;
     background-color: lightblue;
+    margin-bottom: 10px;
  }
