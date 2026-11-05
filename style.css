@@ -3,16 +3,17 @@
 
 
 :root{
-        --cor-fundo: #f1f5f9;
-        --cor-card: rgb(228, 228, 228);
-        --cor-borda: rgb(224, 221, 221);
+        --cor-fundo: #7eb3eb;
+        --cor-card: rgb(231, 231, 231);
+        --cor-borda: rgb(111, 84, 230);
         --cor-botap: #2563eb;
-        --cor-houver:rgb(0, 47, 255);
-        --cor-texto:white;
+        --cor-houver:rgb(41, 17, 180);
+        --cor-texto:rgb(255, 255, 255);
+        --cor-principal:rgb(23, 8, 238);
 
         --espacamento:20px;
         --arrendondamento:12px;
-        --trancisao:0.3s;
+        --transicao:0.3s;
 }   
 
 *{
@@ -25,6 +26,44 @@ body{
     margin: 0;
     padding: 30px;
 }
+
+.topo{  
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: var(--cor-card);
+    border-radius: var(--arrendondamento);
+    border: 2px solid var(--cor-borda);
+}
+
+.topo h1{
+    color: var(--cor-principal);
+}
+
+nav{
+    display: flex;
+    gap: var(--cor-texto);
+}
+
+nav a{
+    color: var(--cor-texto);
+    margin-bottom: 40px;
+}
+
+nav a:hover{
+    color: var(--cor-principal);
+}
+
+/* banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: var(--espacamento);
+    padding: 70px 8%;
+    background-color: linear-gradient(120deg, #312e81, #0f172a);
+} */
+
 header{
     text-align: center;
     margin-bottom: 40px;
@@ -32,7 +71,7 @@ header{
 
 .container{
     display: flex;
-    gap: var(--cor-card);
+    gap: var(--espacamento);
     /*flex direction column: */
 }
 
@@ -52,7 +91,7 @@ button{
     padding: 10px 20px;
     border-radius: 6px;
     cursor: pointer;
-    transition: var(--trancisao);
+    transition: var(--transicao);
 }
 
 button:hover{

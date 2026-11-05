@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Game Store - Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <header class="topo">
+        <h1>🎮Game Store</h1>
+        <hr>
+        <nav>
+            <a href="/index.html">Inicio</a>
+            <a href="/cadastro.html#jogos">Jogos</a>
+            <a href="/cadastro.html">Cadastrar</a>
+        </nav>
+    </header>
+        <main class="Area-Cadastro">
+            <form id="FormCadastro">
+            <h2>Crie sua conta</h2>
+            <p>Faça parte da comunidade Game Store</p><br><br>
+            <label for="nome" Nome completo:> nome</label><br><br>
+            <input type="text" id="nome" placeholder="Digite seu nome" required><br><br>
+
+            <label for="email">Email</label><br><br>
+            <input type="email" id="Email" placeholder="Seu@email.com"><br><br>
+
+            <label for="Senha">Senha:</label><br><br>
+            <input type="password" id="senha" placeholder="Crie sua senha..." minlength="6" required><br><br>
+
+            <label for="plataforma">Sua plataforma Favorita...</label>
+            <br><br>
+            <select name="plataforma" required>
+                <option value="">Selecione</option>
+                <option value="Nintendo">Nintendo</option>
+                <option value="PC">PC</option>
+                <option value="Xbox">Xbox</option>
+                <option value="Playstation">Playstation</option>
+            </select>
+            <br><br>
+            <button type="submit" class="botao">
+                Cadastrar
+            </button>
+            <br><br>
+            <p id="mensagem" aria-live="Polite"></p>
+            <a href="index.html" class="voltar">
+                Voltar para a pagina Inicial
+            </a>
+            </form>
+        </main>
+        <footer>
+            <p>&copy;2026 Game Store - Todos direitos reservados.</p>  
+        </footer>
+            
+    
+</body>        
+</html>
