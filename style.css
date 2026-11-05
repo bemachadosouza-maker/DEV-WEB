@@ -2,3 +2,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Eater&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Redaction+50:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&display=swap');
 
 
+:root{
+        --cor-fundo: #f1f5f9;
+        --cor-card: rgb(228, 228, 228);
+        --cor-borda: rgb(224, 221, 221);
+        --cor-botap: #2563eb;
+        --cor-houver:rgb(0, 47, 255);
+        --cor-texto:white;
+
+        --espacamento:20px;
+        --arrendondamento:12px;
+        --trancisao:0.3s;
+}   
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor-fundo);
+    margin: 0;
+    padding: 30px;
+}
+header{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.container{
+    display: flex;
+    gap: var(--cor-card);
+    /*flex direction column: */
+}
+
+.card{
+    border: 2px solid var(--cor-borda);
+    background-color: var(--cor-card);
+    padding: 25px;
+    border-radius: var(--arrendondamento);
+    flex: 1;
+    text-align: center;
+}
+
+button{
+    background-color: var(--cor-botap);
+    color: var(--cor-texto);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: var(--trancisao);
+}
+
+button:hover{
+    background-color: var(--cor-houver);
+    transform: translateX(5px);
+}
